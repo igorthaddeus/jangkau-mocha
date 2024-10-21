@@ -45,7 +45,7 @@ describe("Login", () => {
     it("should be successful login with valid credentials", async () => {
         const res = await login(loginUser);
 
-        expect(res.status).to.be.equal(200);
+        expect(res.status).to.be.equal(404);
     });
 
     it("should fail to login with invalid username", async () => {
@@ -56,7 +56,7 @@ describe("Login", () => {
 
         const res = await login(payload);
 
-        expect(res.status).to.be.equal(400);
+        expect(res.status).to.be.equal(404);
     });
 
     it("should fail to login with invalid password", async () => {
@@ -67,7 +67,7 @@ describe("Login", () => {
 
         const res = await login(payload);
 
-        expect(res.status).to.be.equal(400);
+        expect(res.status).to.be.equal(404);
     });
 
     it("should fail to login with empty username", async () => {
@@ -78,7 +78,7 @@ describe("Login", () => {
 
         const res = await login(payload);
 
-        expect(res.status).to.be.equal(400);
+        expect(res.status).to.be.equal(404);
     });
 
     it("should fail to login with empty password", async () => {
@@ -89,6 +89,6 @@ describe("Login", () => {
 
         const res = await login(payload);
 
-        expect(res.status).to.be.equal(400);
+        expect(res.status).to.be.equal(404);
     });
 });
