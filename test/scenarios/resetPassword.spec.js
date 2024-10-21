@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import "dotenv/config";
-import { resetPassword } from "../apis/main.api.js";
 import { testData } from "../data/data.js";
+import { resetPassword } from "../apis/main.api.js";
 
 describe("Reset Password", () => {
     it("should be successful with all valid parameters", async () => {
