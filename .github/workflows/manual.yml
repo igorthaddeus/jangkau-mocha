@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Run Mocha tests
-        run: npm run login
+        run: npm run regression
 
       - name: Load test report history
         uses: actions/checkout@v3
