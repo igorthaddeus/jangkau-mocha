@@ -21,12 +21,10 @@ jobs:
           npm install
           npm install mocha allure-mocha
 
-      # Install Allure CLI
       - name: Install Allure CLI
         run: |
           npm install -g allure-commandline --save-dev
 
-      # Install Surge CLI
       - name: Install Surge CLI
         run: |
           npm install -g surge
