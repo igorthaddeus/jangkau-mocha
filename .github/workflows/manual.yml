@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Mocha tests and generate Allure results
         run: |
-          mocha --reporter allure-mocha --reporter-options resultsDir=allure-results test/scenarios/*.spec.js || true
+          node runner.js
 
       - name: Generate Allure report
         run: allure generate allure-results --clean -o allure-report
